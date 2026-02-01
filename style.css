@@ -57,9 +57,17 @@ body::before {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 h1 {
@@ -113,7 +121,7 @@ button {
     color: var(--text-color);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     /* Prepare for absolute positioning */
-    position: relative; 
+    position: relative;
 }
 
 /* Success State Styles */
@@ -121,7 +129,30 @@ button {
     max-width: 100%;
     border-radius: 12px;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.1);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.1);
+    }
+
+    60% {
+        transform: scale(1);
+    }
 }
 
 .hidden {

@@ -83,7 +83,7 @@ yesBtn.addEventListener('click', () => {
     card.innerHTML = `
         <h1>Yay! ❤️</h1>
         <p>Best Valentine Ever!</p>
-        <img src="https://ibb.co/qYbPqBHQ" alt="Cute Hug" style="max-width: 250px; border-radius: 10px;">
+        <img src="valentine_moment.png" alt="Cute Hug" style="max-width: 250px; border-radius: 10px;">
     `;
 
     // Trigger confetti
